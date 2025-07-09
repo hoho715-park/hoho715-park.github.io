@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Jua&family=Do+Hyeon&display=swap" rel="stylesheet">
 
-  <!--Connect CSS-->
+  <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -29,6 +29,7 @@
     <img class="emoji" src="/images/profile.png" alt="이모지">
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <div class="section-title">ABOUT</div>
     <div class="about-container">
@@ -38,16 +39,41 @@
         <p>📞 010-2922-6844<br>📧 andytjdgh@gmail.com<br>🌐 github.com/hoho715</p>
       </div>
       <div class="about-info">
-        <div class="info-block"><h4>EDUCATION</h4><p class="korean">홍익대학교 소프트웨어융합학과 3학년</p><p class="korean">메타버스 5기 웹개발반</p></div>
-        <div class="info-block"><h4>SKILLS</h4><p>Frontend : HTML, CSS, JS</p><p>Backend : PHP</p><p>Version Control : Git , GitHub , Notion</p></div>
-        <div class="info-block"><h4>My Website</h4><a href="https://hoho715.com/"><p>hoho715.com</p></a><a href="http://nodefolio.co.kr/"><p>nodefolio.co.kr</p></a></div>
-        <div class="info-block"><h4>'25 ACTIVITIES</h4><p class="korean">-홍익대학교 소프트웨어융합학과 <br>제28대 부학생회장</p><p class="korean">-nodefolio.co.kr 자기주도학습동아리 <br>우수동아리 선정</p><p class="korean">-SQLD 자격증 취득</p></div>
-        <div class="info-block"><h4>MBTI</h4><p>ENFP</p></div>
-        <div class="info-block"><h4>HOBBY</h4><p class="korean">운동(축구,탁구)</p></div>
+        <div class="info-block">
+          <h4>EDUCATION</h4>
+          <p class="korean">홍익대학교 소프트웨어융합학과 3학년</p>
+          <p class="korean">메타버스 5기 웹개발반</p>
+        </div>
+        <div class="info-block">
+          <h4>SKILLS</h4>
+          <p>Frontend : HTML, CSS, JS</p>
+          <p>Backend : PHP</p>
+          <p>Version Control : Git , GitHub , Notion</p>
+        </div>
+        <div class="info-block">
+          <h4>My Website</h4>
+          <a href="https://hoho715.com/"><p>hoho715.com</p></a>
+          <a href="http://nodefolio.co.kr/"><p>nodefolio.co.kr</p></a>
+        </div>
+        <div class="info-block">
+          <h4>'25 ACTIVITIES</h4>
+          <p class="korean">-홍익대학교 소프트웨어융합학과 <br>제28대 부학생회장</p>
+          <p class="korean">-nodefolio.co.kr 자기주도학습동아리 <br>우수동아리 선정</p>
+          <p class="korean">-SQLD 자격증 취득</p>
+        </div>
+        <div class="info-block">
+          <h4>MBTI</h4>
+          <p>ENFP</p>
+        </div>
+        <div class="info-block">
+          <h4>HOBBY</h4>
+          <p class="korean">운동(축구,탁구)</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- GOAL -->
   <section id="goal" class="goal-section">
     <div class="section-title">GOAL</div>
     <div class="goal-cards">
@@ -77,15 +103,18 @@
     <p>© 2025 ParkSungHo. All rights reserved.</p>
   </footer>
 
+  <!-- CONTACT POPUP -->
   <div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
     <div class="modal" onclick="event.stopPropagation();">
       <h2>Contact Us</h2>
-      <input type="text" placeholder="NAME">
-      <input type="email" placeholder="E-MAIL">
-      <textarea rows="4" placeholder="MESSAGE"></textarea>
-      <button>Submit →</button>
+      <input type="text" placeholder="NAME" id="name">
+      <input type="email" placeholder="E-MAIL" id="email">
+      <textarea rows="4" placeholder="MESSAGE" id="message"></textarea>
+      <button onclick="submitForm()">Submit →</button>
     </div>
   </div>
+
+  <!-- JavaScript -->
   <script src="/js/script.js"></script>
 </body>
 </html>
