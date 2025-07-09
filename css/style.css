@@ -39,6 +39,7 @@
     }
     .info-block h4 { font-size: 25px; color: #4d7edc; margin-bottom: 6px; }
     .info-block p { font-size: 20px; color: #555; font-family: "Bebas Neue"; }
+    .info-block .skills-text {color: purple;}
     .info-block .korean { font-size: 17px; color: #555; font-family: "Do Hyeon"; }
     .goal-section { background: #fff; padding: 60px 40px; }
     .goal-cards {
@@ -51,7 +52,18 @@
     .goal-card h4 {
       background: #4d7edc; color: white; margin: -20px -20px 20px; padding: 10px; font-size: 16px;
     }
-    .goal-card .image-box { width: 100%; height: 140px; background: #e0e0e0; margin-bottom: 15px; }
+    .goal-card .image-box {
+      width: 100%;
+      height: 140px;
+      background-color: #e0e0e0;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .goal-card .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     .goal-card p { font-size: 13px; color: #444; }
     .goal-card .color-text { color: red; }
     footer {
