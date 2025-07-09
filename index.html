@@ -5,40 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PORTFOLIO - 박성호</title>
 
-  <!--Introduce font-->
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Jua&family=Do+Hyeon&display=swap" rel="stylesheet">
 
-  <!--Connect CSS file-->
+  <!--Connect CSS-->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-
-  <!-- HEADER -->
   <header>
     <div class="logo">PORTFOLIO.</div>
     <nav>
       <a href="#about">ABOUT</a>
       <a href="#goal">GOAL</a>
-      <a href="#contact">CONTACT</a>
+      <a onclick="openModal()">CONTACT</a>
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <h1>
-      안녕하세요!<br>
-      제 이름은 <span class="name">박성호</span> 입니다.
-    </h1>
+    <h1>안녕하세요!<br>제 이름은 <span class="name">박성호</span> 입니다.</h1>
     <p class="sub">풀스택 개발자가 되고 싶어요.</p>
     <img class="emoji" src="/images/profile.png" alt="이모지">
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="section-title">ABOUT</div>
     <div class="about-container">
@@ -48,41 +38,16 @@
         <p>📞 010-2922-6844<br>📧 andytjdgh@gmail.com<br>🌐 github.com/hoho715</p>
       </div>
       <div class="about-info">
-        <div class="info-block">
-          <h4>EDUCATION</h4>
-          <p class="korean">홍익대학교 소프트웨어융합학과 3학년</p>
-          <p class="korean">메타버스 5기 웹개발반</p>
-        </div>
-        <div class="info-block">
-          <h4>SKILLS</h4>
-          <p>Frontend : HTML, CSS, JS</p>
-          <p>Backend : PHP</p>
-          <p>Version Control : Git , GitHub , Notion</p>
-        </div>
-        <div class="info-block">
-          <h4>My Website</h4>
-          <a href="https://hoho715.com/"><p>hoho715.com</p></a>
-          <a href="http://nodefolio.co.kr/"><p>nodefolio.co.kr</p></a>
-        </div>
-        <div class="info-block">
-          <h4>'25 ACTIVITIES</h4>
-          <p class="korean">-홍익대학교 소프트웨어융합학과 <br>제28대 부학생회장</p>
-          <p class="korean">-nodefolio.co.kr 자기주도학습동아리 <br>우수동아리 선정</p>
-          <p class="korean">-SQLD 자격증 취득</p>
-        </div>
-        <div class="info-block">
-          <h4>MBTI</h4>
-          <p>ENFP</p>
-        </div>
-        <div class="info-block">
-          <h4>HOBBY</h4>
-          <p class="korean">운동(축구,탁구)</p>
-        </div>
+        <div class="info-block"><h4>EDUCATION</h4><p class="korean">홍익대학교 소프트웨어융합학과 3학년</p><p class="korean">메타버스 5기 웹개발반</p></div>
+        <div class="info-block"><h4>SKILLS</h4><p>Frontend : HTML, CSS, JS</p><p>Backend : PHP</p><p>Version Control : Git , GitHub , Notion</p></div>
+        <div class="info-block"><h4>My Website</h4><a href="https://hoho715.com/"><p>hoho715.com</p></a><a href="http://nodefolio.co.kr/"><p>nodefolio.co.kr</p></a></div>
+        <div class="info-block"><h4>'25 ACTIVITIES</h4><p class="korean">-홍익대학교 소프트웨어융합학과 <br>제28대 부학생회장</p><p class="korean">-nodefolio.co.kr 자기주도학습동아리 <br>우수동아리 선정</p><p class="korean">-SQLD 자격증 취득</p></div>
+        <div class="info-block"><h4>MBTI</h4><p>ENFP</p></div>
+        <div class="info-block"><h4>HOBBY</h4><p class="korean">운동(축구,탁구)</p></div>
       </div>
     </div>
   </section>
 
-  <!-- GOAL -->
   <section id="goal" class="goal-section">
     <div class="section-title">GOAL</div>
     <div class="goal-cards">
@@ -107,11 +72,20 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="logo">PORTFOLIO.</div>
-    <p>ⓒ 2025 ParkSungHo. All rights reserved.</p>
+    <p>© 2025 ParkSungHo. All rights reserved.</p>
   </footer>
 
+  <div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation();">
+      <h2>Contact Us</h2>
+      <input type="text" placeholder="NAME">
+      <input type="email" placeholder="E-MAIL">
+      <textarea rows="4" placeholder="MESSAGE"></textarea>
+      <button>Submit →</button>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
 </body>
 </html>
