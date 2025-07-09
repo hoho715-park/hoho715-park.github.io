@@ -36,3 +36,13 @@ function submitForm() {
   document.getElementById("email").value = "";
   document.getElementById("message").value = "";
 }
+
+function openPopup(target) {
+  document.querySelectorAll('.goal-popup').forEach(popup => popup.classList.remove('active'));
+  const popup = document.getElementById(`popup-${target}`);
+  if (popup) popup.classList.add('active');
+}
+
+function closePopup() {
+  document.querySelectorAll('.goal-popup').forEach(popup => popup.classList.remove('active'));
+}

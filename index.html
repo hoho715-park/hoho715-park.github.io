@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Jua&family=Do+Hyeon&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -77,7 +81,7 @@
   <section id="goal" class="goal-section">
     <div class="section-title">GOAL</div>
     <div class="goal-cards">
-      <div class="goal-card">
+      <div class="goal-card" onclick="openPopup('coding')">
         <h4>코딩 고수되기</h4>
         <div class="image-box">
           <img src="/images/codeimage.jpeg" alt="coding-image">
@@ -85,7 +89,7 @@
         <p>프론트,백 분야 안가리고 잘하기</p>
         <p>코딩 열심히 하기, 성장하기</p>
       </div>
-      <div class="goal-card">
+      <div class="goal-card" onclick="openPopup('collab')">
         <h4>협업 잘하기</h4>
         <div class="image-box">
           <img src="/images/gitgithub-image.png" alt="gitgithub-image">
@@ -93,7 +97,7 @@
         <p>팀프로젝트 경험을 통한</p>
         <p class="color-text"><b>팀워크와 커뮤니케이션 향상</b></p>
       </div>
-      <div class="goal-card">
+      <div class="goal-card" onclick="openPopup('study')">
         <h4>꾸준히 하기</h4>
         <div class="image-box">
           <img src="/images/daily.jpg" alt="daily-image">
@@ -117,6 +121,41 @@
       <input type="email" placeholder="E-MAIL" id="email">
       <textarea rows="4" placeholder="MESSAGE" id="message"></textarea>
       <button onclick="submitForm()">Submit →</button>
+    </div>
+  </div>
+
+   <!-- GOAL POPUPS -->
+  <div class="goal-popup" id="popup-coding">
+    <div class="popup-content">
+      <h3>코딩 고수되기</h3>
+      <ul>
+        <li>HTML/CSS/JS 기초 마스터</li>
+        <li>Spring Boot를 통한 백엔드 공부</li>
+        <li>프론트엔드와 백엔드의 상호작용을 통한 풀스택 역량 기르기</li>
+      </ul>
+      <button onclick="closePopup()">닫기</button>
+    </div>
+  </div>
+  <div class="goal-popup" id="popup-collab">
+    <div class="popup-content">
+      <h3>협업 잘하기</h3>
+      <ul>
+        <li>Git & GitHub으로 협업하기</li>
+        <li>팀 회의 정기적으로 진행하기</li>
+        <li>피드백 주고받기</li>
+      </ul>
+      <button onclick="closePopup()">닫기</button>
+    </div>
+  </div>
+  <div class="goal-popup" id="popup-study">
+    <div class="popup-content">
+      <h3>꾸준히 하기</h3>
+      <ul>
+        <li>하루 최소 2시간 공부</li>
+        <li>기록 노션 및 티스토리 정리</li>
+        <li>목표별 체크리스트 작성</li>
+      </ul>
+      <button onclick="closePopup()">닫기</button>
     </div>
   </div>
 
