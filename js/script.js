@@ -46,3 +46,41 @@ function openPopup(target) {
 function closePopup() {
   document.querySelectorAll('.goal-popup').forEach(popup => popup.classList.remove('active'));
 }
+
+//Dark Mode
+document.querySelector('.logo').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  document.querySelector('header').classList.toggle('dark-mode');
+  document.querySelector('footer').classList.toggle('dark-mode');
+  document.querySelector('.hero').classList.toggle('dark-mode');
+  document.querySelector('.goal-section').classList.toggle('dark-mode');
+
+  // Section Titles
+  document.querySelectorAll('.section-title').forEach(el => {
+    el.classList.toggle('dark-mode');
+  });
+
+  // Profile Box
+  document.querySelectorAll('.profile-box').forEach(el => {
+    el.classList.toggle('dark-mode');
+  });
+
+  // About Info
+  document.querySelectorAll('.info-block').forEach(el => {
+    el.classList.toggle('dark-mode');
+  });
+
+  // Goal Cards
+  document.querySelectorAll('.goal-card').forEach(el => {
+    el.classList.toggle('dark-mode');
+  });
+
+  // Modal
+  const modal = document.querySelector('.modal');
+  if (modal) modal.classList.toggle('dark-mode');
+
+  // Goal Popups
+  document.querySelectorAll('.popup-content').forEach(el => {
+    el.classList.toggle('dark-mode');
+  });
+});
