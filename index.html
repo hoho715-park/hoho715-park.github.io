@@ -19,6 +19,9 @@
 
   <!--Favicon-->
   <link rel="icon" href="/favicon/favicon.ico">
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 
 </head>
 <body>
@@ -51,7 +54,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <div class="section-title">ABOUT</div>
     <div class="about-container">
       <!--About Left-container-->
@@ -101,7 +104,7 @@
   </section>
 
   <!-- GOAL -->
-  <section id="goal" class="goal-section">
+  <section id="goal" class="goal-section" data-aos="fade-right">
     <div class="section-title">GOAL</div>
     <div class="goal-cards">
       <div class="goal-card" onclick="openPopup('coding')">
@@ -185,5 +188,13 @@
 
   <!-- JavaScript Connect -->
   <script src="/js/script.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // 애니메이션 지속 시간 (ms)
+    once: true      // 한 번만 애니메이션 실행
+  });
+</script>
 </body>
 </html>
