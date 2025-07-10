@@ -176,3 +176,6 @@
   font-size: 100px;
   color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
