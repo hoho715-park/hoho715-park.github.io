@@ -246,3 +246,14 @@ footer.dark-mode {
 .goal-section.dark-mode {
   background: #1c1c1c;
 }
+
+#scroll-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #4d7edc;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.25s ease;
+}
