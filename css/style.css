@@ -19,7 +19,11 @@
       background: white;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .logo { font-weight: bold; font-size: 24px; color: #4d7edc; }
+    .logo { font-size: 22px;
+      font-weight: bold;
+      color: #4f80e1;
+      flex-shrink: 0; /* 크기 줄어들지 않게 고정 */
+    }
     nav a { margin-left: 30px; font-weight: 500; cursor: pointer; }
     .hero {
       background: #4d7edc;
@@ -291,7 +295,8 @@
 /* 반응형 네비게이션 스타일 */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
   align-items: center;
   padding: 20px 30px;
   background-color: white;
@@ -309,6 +314,8 @@
 .nav-links {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links a {
@@ -378,7 +385,9 @@ body.dark-mode .menu-toggle span {
 body.dark-mode .nav-links.active a {
   color: #000 !important;
 }
-
+body.dark-mode a {
+  color: #fff;
+}
 .nav-links a {
   color: #222; /* 일반모드용 */
   transition: color 0.3s;
