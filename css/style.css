@@ -287,3 +287,99 @@
 .skills-list i {
   font-size: 24px;
 }
+
+/* 반응형 네비게이션 스타일 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4f80e1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4f80e1;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333; /* 일반모드 - 검정색 */
+  transition: background-color 0.3s;
+}
+
+/* 다크모드일 때 햄버거 span 색상 흰색으로 */
+body.dark-mode .menu-toggle span {
+  background-color: #fff;
+}
+
+body.dark-mode .nav-links.active a {
+  color: #000 !important;
+}
+
+.nav-links a {
+  color: #222; /* 일반모드용 */
+  transition: color 0.3s;
+}

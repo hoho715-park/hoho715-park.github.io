@@ -90,3 +90,7 @@ window.addEventListener('scroll', () => {
   const scrollPercent = (scrollTop / docHeight) * 100;
   document.getElementById('scroll-bar').style.width = `${scrollPercent}%`;
 });
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('nav-links').classList.toggle('active');
+  });

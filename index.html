@@ -31,14 +31,22 @@
 </head>
 <body>
   <div id="scroll-bar"></div>
-  <header>
-    <div class="logo">PORTFOLIO.</div>
-    <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#goal">GOAL</a>
-      <a onclick="openModal()">CONTACT</a>
-    </nav>
-  </header>
+  <header class="navbar">
+  <div class="logo">PORTFOLIO.</div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="#about">ABOUT</a>
+    <a href="#goal">GOAL</a>
+    <a onclick="openModal()" href="#contact">CONTACT</a>
+  </nav>
+</header>
+
 
   <section class="hero">
     <!-- Social Icon -->
