@@ -77,6 +77,16 @@ header {
       display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 600px;
     }
     .info-block h4 { font-size: 25px; color: #4d7edc; margin-bottom: 6px; }
+
+    .website-item {
+      color: #444;         /* 기본 글씨색 */
+      transition: color 0.2s; /* 부드럽게 색 변화 */
+      cursor: pointer;     /* 손가락 커서로 변경 */
+    }
+    /* 마우스를 올릴때(hover) 색상 변경 */
+      .website-item:hover {
+        color: #347433;      /* 원하는 색으로 변경 (#3765c7 = 예시 파랑) */
+      }
     .info-block p { font-size: 20px; color: #555; font-family: "Bebas Neue"; }
     .info-block .skills-text {color: purple;}
     .info-block .korean { font-size: 17px; color: #555; font-family: "Do Hyeon"; }
@@ -395,3 +405,13 @@ body.dark-mode a {
   color: #222; /* 일반모드용 */
   transition: color 0.3s;
 }
+
+      body.dark-mode .website-item {
+      color: #444;         /* 기본 글씨색 */
+      transition: color 0.2s; /* 부드럽게 색 변화 */
+      cursor: pointer;     /* 손가락 커서로 변경 */
+    }
+    /* 마우스를 올릴때(hover) 색상 변경 */
+      body.dark-mode .website-item:hover {
+        color: #64E2B7;      /* 원하는 색으로 변경 (#3765c7 = 예시 파랑) */
+      }
