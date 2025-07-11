@@ -66,6 +66,7 @@
       background: white; padding: 30px; border-radius: 10px; width: 280px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05); text-align: center;
     }
+    .profile-box-content {margin-top: 40px;}
     .profile-box img { width: 100px; border-radius: 50%; margin-bottom: 10px; }
     .profile-box h2 { font-size: 20px; margin: 10px 0; color: #4d7edc; }
     .about-info {
