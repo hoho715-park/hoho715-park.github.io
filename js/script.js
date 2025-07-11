@@ -94,3 +94,12 @@ window.addEventListener('scroll', () => {
 document.getElementById('menu-toggle').addEventListener('click', function () {
     document.getElementById('nav-links').classList.toggle('active');
   });
+
+document.getElementById('lang-toggle').addEventListener('click', function() {
+  // 현재 URL에 'index-en.html'이 포함되어 있으면 index.html로, 아니면 index-en.html로 이동
+  if (window.location.pathname.includes('index-en.html')) {
+    window.location.href = '/index.html';
+  } else {
+    window.location.href = '/index-en.html';
+  }
+});
